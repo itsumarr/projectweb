@@ -50,6 +50,7 @@ table {
 
 
 body {
+    font-family: Inter, sans-serif;
     background-color: #1B2316;
     color: white;
 }
@@ -58,20 +59,22 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 57px;
 }
 
 .header__logo {
     display: flex;
     align-items: center;
+    gap: 13px;
+    text-decoration: none;
 }
 
 
-.header__logo-img {
-    object-fit: fill;
-}
 .header__logo-text {
     font-weight: 900;
     color: white;
+    font-size: 28px;
+    line-height: auto;
 }
 .header__items {    
     display: flex;
@@ -79,7 +82,11 @@ body {
 }
 .header__items a {
     color: white;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: auto;
     text-decoration: none;
+    font-family: 'Inter';
 }
 .header__icons {
     display: flex;
