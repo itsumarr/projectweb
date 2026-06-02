@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/fonts.css">
 </head>
-<script src="scripts/scripts.js"></script>
+
 <body>
     <div class="container">
     <!-- header__logo - это пишем по БЭМ (документация есть в интернете) -->
@@ -43,7 +43,7 @@
                 <p class="header_tekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </article>
             <div class="header__button">
-                <button class="header__explore">
+                <button class="welcome__explore">
                     Explore
                 </button>
                 <div class="live-demo-wrapper">
@@ -322,5 +322,22 @@
     </footer>
     </div>
     <script src="scripts/script.js"></script>
+   
+
+    <!-- Модальное окно -->
+<div class="applications" hidden>
+    <div class="application">
+        <button class="application__close">✕</button>
+        <h3 class="application__title">Оставить заявку</h3>
+        <p class="application__text">Заполните форму и мы свяжемся с вами</p>
+        <form class="application__form">
+            <input class="application__input" type="text" placeholder="Имя" required>
+            <input class="application__input" type="tel" placeholder="Телефон" required>
+            <input class="application__input" type="email" placeholder="E-mail" required>
+            <button class="application__button">Отправить заявку</button>
+        </form>
+    </div>
+</div>
+<script src="scripts/script.js"></script>
 </body>
 </html>
