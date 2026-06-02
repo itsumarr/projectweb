@@ -25,6 +25,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    margin: 0;
 }
 ol, ul {
 	list-style: none;
@@ -58,6 +59,13 @@ body {
     background-position: center top;
     background-repeat: no-repeat;
     min-height: 100vh;
+}
+
+.container {
+    max-width: 1728px; 
+    margin: 0 auto;    
+    
+   
 }
 
 .header {
@@ -374,7 +382,7 @@ body {
     font-size: 28px;
     font-weight: 500;
     padding: 15px 59px;
-    border-radius: 10px;
+    border-radius: 12px;
     border: 3px solid white;
     height: max-content;
 }
@@ -433,10 +441,11 @@ body {
     font-size: 28px;
     font-weight: 500;
     padding: 15px 59px;
-    border-radius: 10px;
+    border-radius: 12px;
     border: 3px solid white;
     height: max-content;
 }
+
 .product_bag2{
     width: 34px;
     height: 34px;
@@ -448,7 +457,7 @@ body {
 .product_image2{
     width: 732px;
     height: 732px;
-    margin-top: -238px;
+    margin-top: -153px;
     object-fit: cover;
     padding-left: 35px; 
 }
@@ -646,6 +655,42 @@ body {
     border: 3px solid white;
     height: max-content;
 }
+.expl_navig{
+    display: flex;
+}
+.cards__arrows{
+    margin-top: -30px;
+}
+.cards__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.counter-01{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    opacity: 75%;
+}
+.counter-04{
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    opacity: 75%;
+}
+.cards_arrow-left{
+    background: transparent;
+    border: none;
+    margin-right: 43px;
+    margin-left: 297px;
+}
+.cards_arrow-right{
+    background: transparent;
+    border: none;
+    margin-left: 43px;
+}
+
 
 
 .header__items {    
@@ -765,4 +810,203 @@ body {
     font-size: 24;
     color: white;
     margin-top: 205px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Смартфоны (до 576px) */
+@media screen and (max-width: 576px) {
+    .header {
+        padding: 15px;
+    }
+    .header__menu {
+        display: none;
+    }
+    .header__icons {
+        gap: 20px;
+    }
+    .header__logo-text {
+        font-size: 20px;
+    }
+    .header__texts {
+        padding: 40px 20px 0 20px;
+    }
+    .header__text {
+        font-size: 42px;
+    }
+    .header_tekst {
+        font-size: 16px;
+    }
+    .header__button {
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .header__explore {
+        font-size: 20px;
+        padding: 10px 30px;
+    }
+    .live-demo-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .demo-text {
+        font-size: 16px;
+    }
+    .right-card {
+        padding: 0 20px;
+    }
+    .product-card {
+        margin-top: -100px;
+        padding: 30px 20px;
+    }
+    .product__image {
+        min-width: auto;
+        margin-top: -60px;
+    }
+    .product__title {
+        font-size: 24px;
+    }
+    .testimonial {
+        padding: 40px 20px;
+    }
+    .testimonial-card {
+        padding: 30px 20px;
+    }
+    .testimonial__stars {
+        padding-left: 0;
+        margin-top: 0;
+    }
+    .trendy-title,
+    .flower_cards-zag,
+    .customer_review,
+    .our_best {
+        font-size: 32px;
+    }
+    .product_card,
+    .product_card2 {
+        flex-direction: column;
+        margin: 20px;
+    }
+    .product_image,
+    .product_image2 {
+        width: 100%;
+        height: auto;
+        margin-top: -50px;
+        padding-left: 0;
+    }
+    .product_zag {
+        font-size: 24px;
+        padding: 15px;
+    }
+    .product_description {
+        font-size: 16px;
+        padding: 15px;
+    }
+    .product-price {
+        font-size: 24px;
+        padding: 15px;
+    }
+    .flower_cards {
+        padding: 40px 20px;
+    }
+    .flower_items-cards {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+    .flower_card1 {
+        border-radius: 40px;
+        padding: 20px;
+    }
+    .flower_card-image1 {
+        margin-top: -80px;
+    }
+    .flower_cards-zag1 {
+        font-size: 24px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .flower_cards-description1 {
+        font-size: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .flower_cards-button1 {
+        padding: 30px 20px;
+    }
+    .review {
+        padding: 40px 20px;
+    }
+    .review_card {
+        padding: 40px 20px;
+    }
+    .review_human {
+        gap: 15px;
+    }
+    .review_avatar {
+        width: 60px;
+        height: 60px;
+    }
+    .review_name {
+        font-size: 22px;
+    }
+    .review_stars {
+        padding-left: 0;
+        margin-top: 0;
+    }
+    .cards {
+        padding: 40px 20px;
+    }
+    .full_map {
+        border-radius: 40px;
+        padding: 30px 20px;
+    }
+    .best_collections {
+        font-size: 22px;
+    }
+    .card_description1,
+    .card_description2 {
+        font-size: 16px;
+    }
+    .footer {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 40px;
+    }
+    .footer__logo-text {
+        font-size: 32px;
+    }
+    .footer__text {
+        font-size: 16px;
+    }
+    .footer__form {
+        flex-direction: column;
+    }
+}
+
+/* Маленькие смартфоны (до 375px) */
+@media screen and (max-width: 375px) {
+    .header__text {
+        font-size: 32px;
+    }
+    .product__title {
+        font-size: 20px;
+    }
+    .flower_cards-zag1 {
+        font-size: 20px;
+    }
+    .review_name {
+        font-size: 18px;
+    }
 }

@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/fonts.css">
 </head>
 <body>
+    <div class="container">
     <!-- header__logo - это пишем по БЭМ (документация есть в интернете) -->
     <header class="header">
         <a href="#" class="header__logo">
@@ -59,7 +61,7 @@
         <div class="product__title-wrapper">
         <h2 class="product__title">Calathea plant</h2>
         <button class="product__arrow">
-             <img src="./images/arrow_icon.svg" alt="arrow" width="20" height="20">
+             <img src="./images/arrow_right.svg" alt="arrow" width="20" height="20">
              </button>
             </div>
         <div class="product__action">
@@ -105,7 +107,7 @@
                 <p class="product-price">Rs. 599/-</p>
                 <div class="product_buttons">
                     <a href="#" class="product-explore">Explore</a>
-                    <li class="product_bag"><a href="#"><img src="./images/bag_icon.svg" alt="bag" width="34" height="34"></a></li>
+                <a href="#"><img src="./images/bag_icon.svg" alt="bag" width="34" height="34" class="product_bag"></a>
                 
                 </div>
             </div>
@@ -120,7 +122,7 @@
             <p class="product-price2">Rs.579/-</p>
             <div class="product_buttons2">
                 <a href="#" class="product-explore2">Explore</a>
-                <li class="product_bag2"><a href="#"><img src="./images/bag_icon.svg" alt="bag" width="34" height="34"></a></li>
+                <a href="#"><img src="./images/bag_icon.svg" alt="bag" width="34" height="34" class="product_bag2"></a>
             </div>
             </div>
                   <img src="./images/flower_2.png" alt="flower" width="601" height="732" class="product_image2">
@@ -254,11 +256,25 @@
             <p class="best_collections">We Have Small And Best O2 Plants Collection’s</p>
             <p class="card_description1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
             <p class="card_description2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <div class="expl_navig">
             <button class="card_explore">
                     Explore
                 </button>
+
+    <div class="cards__navigation">
+    <div class="cards__arrows">
+        <button class="cards_arrow-left">
+            <img src="./images/arrow_left.svg" alt="Previous" width="24" height="24">
+        </button>
+        <span class="counter-01">01</span> / <span class="counter-04">04</span>
+        <button class="cards_arrow-right">
+            <img src="./images/arrow_right.svg" alt="Next" width="24" height="24">
+        </button>
         </div>
-        </div>
+       </div>
+     </div>
+   </div>
+  </div>
 </section>
 </main>
 
@@ -303,5 +319,7 @@
 
         </div>
     </footer>
+    </div>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
