@@ -125,6 +125,12 @@ body {
     height: max-content;
     opacity: 75%;
     cursor: pointer;
+    
+}
+.welcome__explore:hover{
+    background: white;
+    color: #1B2316;
+    
 }
 .live-demo-wrapper {
     display: flex;
@@ -387,6 +393,10 @@ body {
     border: 3px solid white;
     height: max-content;
 }
+.product-explore:hover{
+    background: white;
+    color: #1B2316;
+}
 .product_bag {
     width: 34px;
     height: 34px;
@@ -446,7 +456,10 @@ body {
     border: 3px solid white;
     height: max-content;
 }
-
+.product-explore2:hover{
+    background: white;
+    color: #1B2316;
+}
 .product_bag2{
     width: 34px;
     height: 34px;
@@ -656,6 +669,10 @@ body {
     border: 3px solid white;
     height: max-content;
 }
+.card_explore:hover{
+    background: white;
+    color: #1B2316;
+}
 .expl_navig{
     display: flex;
 }
@@ -812,6 +829,36 @@ body {
     color: white;
     margin-top: 205px;
 }
+
+.welcome__explore,
+.product-explore,
+.product__buy,
+.product-explore2,
+.card_explore {
+    transition: 0.3s;
+}
+.header__items a {
+    transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+
+.header__items a:hover {
+    color: #a8b5a0; 
+    opacity: 0.8;
+}
+
+.footer__items a {
+    transition: color 0.3s ease, opacity 0.3s ease;
+    text-decoration: none;
+    color: white;
+}
+
+.footer__items a:hover {
+    color: #a8b5a0; 
+    opacity: 0.8;
+}
+
+
 
 
 

@@ -2,8 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function() {
     console.log('Скрипт отработал корректно');
-    
-    // Замените welcome__button на welcome__explore
+
     const welcomeButtonModal = document.querySelector(".welcome__explore");
     const modalApplication = document.querySelector(".applications");
 
